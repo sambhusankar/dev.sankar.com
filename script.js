@@ -97,7 +97,7 @@
         <div class="edu-entry">
           <div class="edu-degree">${esc(e.degree)}${e.field ? ' in ' + esc(e.field) : ''}</div>
           <div class="edu-meta">${esc(e.institution)}${e.location ? ', ' + esc(e.location) : ''}</div>
-          <div class="edu-meta">${formatDate(e.startDate)} – ${formatDate(e.endDate)}</div>
+          <div class="edu-meta">${formatDate(e.startDate)} – ${e.endDate ? formatDate(e.endDate) : 'Present'}</div>
         </div>
       `).join('');
     }

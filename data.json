@@ -16,14 +16,33 @@
       "company": "IM Gears Pvt. Ltd.",
       "position": "Software Developer",
       "location": "Chennai, India",
-      "startDate": "2023-02",
+      "startDate": "2024-05",
       "endDate": null,
       "current": true,
-      "description": "Developing internal tools, softwares, data driven insights for internal clients",
+      "description": "Building internal software solutions, data pipelines, and dashboards for cross-functional teams. Working closely with stakeholders to understand business needs and deliver full-stack applications following Agile practices.",
       "highlights": [
-        "Architected a new dashboard that reduced page load time by 40%",
-        "Mentored 3 junior developers on best practices",
-        "Implemented CI/CD pipeline reducing deployment time by 60%"
+        "Contributed to a full-stack web app for the marketing team to prepare and manage customer quotes",
+        "Contributed to a full-stack web app for the engineering team to define and manage process flows for new parts",
+        "Built a part traceability system using QR codes and barcode scanning to track parts across manufacturing stages (IoT)",
+        "Architected and built Microlight, a microservice-based web app that centralizes and handles all ETL tasks",
+        "Collaborated with multiple internal teams to gather requirements, write user stories, and deliver tailored software solutions",
+        "Documented new features and gathered feedback from internal clients to drive iterative improvements",
+        "Designed and maintained ETL pipelines to transfer data from CRM and ERP systems into a centralized data warehouse and data lakes",
+        "Built real-time data transfer systems to stream measurement data from inspection gauges into the data pipeline",
+        "Built and maintained analytics dashboards in Metabase to surface business insights from transferred data"
+      ]
+    },
+    {
+      "company": "Shiash Info Pvt. Ltd.",
+      "position": "Full Stack Developer Intern",
+      "location": "",
+      "startDate": "2024-03",
+      "endDate": "2024-08",
+      "current": false,
+      "description": "Internship focused on full stack web development.",
+      "highlights": [
+        "Built and maintained features using React.js frontend",
+        "Developed backend APIs with Python and Django"
       ]
     },
     {
@@ -31,13 +50,14 @@
       "position": "Machine Operator",
       "location": "Chennai, India",
       "startDate": "2021-03",
-      "endDate": "2023-02",
+      "endDate": "2024-05",
       "current": false,
-      "description": "Operating CNC, VMC Machines, inspecting part quality",
+      "description": "Operated CNC and VMC machines in a manufacturing environment, ensuring part quality and production efficiency.",
       "highlights": [
-        "Built REST API handling 10K+ daily requests",
-        "Developed responsive frontend components using React",
-        "Integrated third-party payment processing systems"
+        "Gained hands-on experience with CNC programming and mechanical engineering principles",
+        "Developed proficiency in SAP for production and inventory management",
+        "Applied quality management practices to inspect and maintain part standards",
+        "Collaborated with cross-functional manufacturing teams to meet production targets"
       ]
     }
   ],
@@ -48,7 +68,7 @@
       "field": "Computer Science",
       "location": "Chennai, India",
       "startDate": "2025-03",
-      "endDate": "2028-03",
+      "endDate": null,
       "gpa": "3.7",
       "highlights": [
         "Dean's List 2015-2017",
