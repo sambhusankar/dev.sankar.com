@@ -58,25 +58,11 @@
   ],
   "projects": [
     {
-      "name": "Task Manager Pro",
-      "description": "A minimalist task management app with drag-and-drop functionality and local storage persistence.",
-      "technologies": ["JavaScript", "HTML", "CSS", "LocalStorage API"],
-      "url": "https://github.com/johndoe/task-manager",
-      "demo": "https://johndoe.github.io/task-manager"
-    },
-    {
-      "name": "Weather Dashboard",
-      "description": "Real-time weather information app using OpenWeather API with location-based forecasts.",
-      "technologies": ["React", "Node.js", "OpenWeather API"],
-      "url": "https://github.com/johndoe/weather-dashboard",
-      "demo": null
-    },
-    {
-      "name": "Blog Platform",
-      "description": "A simple blog platform with markdown support and user authentication.",
-      "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
-      "url": "https://github.com/johndoe/blog-platform",
-      "demo": "https://blog.johndoe.dev"
+      "name": "RoomGrub",
+      "description": "An easy to use open source expense spltting app with friends",
+      "technologies": ["JavaScript", "Next.js", "Supabase", "O Auth", "Sequelize"],
+      "url": "https://github.com/sambhusankar/RoomGrub",
+      "demo": "https://roomgrub.broccly.in"
     }
   ],
   "skills": [
