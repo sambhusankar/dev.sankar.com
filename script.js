@@ -77,7 +77,6 @@
     if (meta.email)    parts.push(`<a href="mailto:${esc(meta.email)}">${esc(meta.email)}</a>`);
     if (meta.linkedin) parts.push(`<a href="${esc(meta.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`);
     if (meta.github)   parts.push(`<a href="${esc(meta.github)}"   target="_blank" rel="noopener">GitHub</a>`);
-    if (meta.location) parts.push(`<span>${esc(meta.location)}</span>`);
     linksEl.innerHTML = parts.join('');
 
     // skills
