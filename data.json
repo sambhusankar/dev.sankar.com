@@ -2,11 +2,13 @@
   "meta": {
     "name": "Sambhu Sankar Swain",
     "title": "Software Developer",
-    "email": "sambhusankarswain@email.com",
+    "email": "sambhusankarswain@gmail.com",
     "phone": "+91 8238187630",
     "location": "Vengeivasal, Chennai, India",
     "linkedin": "https://www.linkedin.com/in/s-sankar-swain-b9821a270?trk=contact-info",
-    "github": "https://github.com/sambhusankar"
+    "github": "https://github.com/sambhusankar",
+    "youtube": "https://www.youtube.com/@sankar_dev",
+    "leetcode": "https://leetcode.com/u/sambhusankarswain/"
   },
   "about": {
     "summary": "Passionate developer with 2 years of experience in software engineering and 3 years prior in a non-tech manufacturing role. I specialize in building internal tools, automating workflows, and creating data pipelines and dashboards for business teams. Currently focused on backend development, with a strong interest in systems design and scalable software."
@@ -130,10 +132,8 @@
     }
   ],
   "interests": [
-    "Open source contribution",
-    "Hiking and photography",
-    "Chess",
-    "Reading science fiction",
-    "Home automation projects"
+    "Teaching people about tech and coding on YouTube",
+    "Solving coding problems",
+    "Reading psychological books"
   ]
 }

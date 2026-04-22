@@ -62,7 +62,7 @@
   // ── Home ──────────────────────────────────────────────────────────────────
 
   function renderHome(data) {
-    const { meta, about, skills, education } = data;
+    const { meta, about, skills, education, interests } = data;
 
     document.getElementById('nav-brand').textContent = meta.name || 'Portfolio';
     document.title = (meta.name || 'Portfolio') + ' — Portfolio';
@@ -74,9 +74,10 @@
 
     const linksEl = document.getElementById('hero-links');
     const parts = [];
-    if (meta.email)    parts.push(`<a href="mailto:${esc(meta.email)}">${esc(meta.email)}</a>`);
     if (meta.linkedin) parts.push(`<a href="${esc(meta.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`);
     if (meta.github)   parts.push(`<a href="${esc(meta.github)}"   target="_blank" rel="noopener">GitHub</a>`);
+    if (meta.youtube)  parts.push(`<a href="${esc(meta.youtube)}"  target="_blank" rel="noopener">YouTube</a>`);
+    if (meta.leetcode) parts.push(`<a href="${esc(meta.leetcode)}" target="_blank" rel="noopener">LeetCode</a>`);
     linksEl.innerHTML = parts.join('');
 
     // skills
@@ -100,6 +101,12 @@
           <div class="edu-meta">${formatDate(e.startDate)} – ${e.endDate ? formatDate(e.endDate) : 'Present'}</div>
         </div>
       `).join('');
+    }
+
+    // interests
+    const interestsEl = document.getElementById('home-interests');
+    if (interests && interests.length) {
+      interestsEl.innerHTML = `<ul class="interests-list">${interests.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`;
     }
   }
 
