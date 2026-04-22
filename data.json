@@ -81,30 +81,46 @@
   ],
   "skills": [
     {
-      "category": "Programming Languages",
-      "items": ["JavaScript", "TypeScript", "Python", "Go", "SQL"]
+      "category": "Languages",
+      "items": ["JavaScript", "Python", "C++", "PHP", "SQL", "C", "HTML", "CSS"]
+    },
+    {
+      "category": "Database",
+      "items": ["PostgreSQL", "MongoDB", "Redis"]
     },
     {
       "category": "Frameworks & Libraries",
-      "items": ["React", "Node.js", "Express", "Django", "Next.js"]
+      "items": ["React.js", "Next.js", "Express.js", "Node.js"]
     },
     {
-      "category": "Tools & Platforms",
-      "items": ["Git", "Docker", "AWS", "PostgreSQL", "MongoDB", "Linux"]
+      "category": "Tools",
+      "items": ["Git", "GitHub", "AWS", "Cloudflare", "Supabase", "Appwrite", "Docker", "Linux", "Metabase"]
+    },
+    {
+      "category": "API",
+      "items": ["REST API", "GraphQL", "Websockets"]
+    },
+    {
+      "category": "Testing",
+      "items": ["Jest", "Playwright", "Storybook"]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "proficiency": "Native"
-    },
-    {
-      "language": "Spanish",
       "proficiency": "Professional"
     },
     {
-      "language": "French",
+      "language": "Tamil",
+      "proficiency": "Professional"
+    },
+    {
+      "language": "Hindi",
       "proficiency": "Conversational"
+    },
+    {
+      "language": "Odia",
+      "proficiency": "Native"
     }
   ],
   "interests": [
