@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "name": "Sambhu Sankar Swain",
+    "title": "Software Developer",
+    "email": "sambhusankarswain@email.com",
+    "phone": "+91 8238187630",
+    "location": "Vengeivasal, Chennai, India",
+    "linkedin": "https://www.linkedin.com/in/s-sankar-swain-b9821a270?trk=contact-info",
+    "github": "https://github.com/sambhusankar"
+  },
+  "about": {
+    "summary": "Passionate software developer with 5+ years of experience building web applications. I enjoy creating clean, efficient solutions and collaborating with teams to deliver impactful products."
+  },
+  "experience": [
+    {
+      "company": "IM Gears Pvt. Ltd.",
+      "position": "Software Developer",
+      "location": "Chennai, India",
+      "startDate": "2023-02",
+      "endDate": null,
+      "current": true,
+      "description": "Developing internal tools, softwares, data driven insights for internal clients",
+      "highlights": [
+        "Architected a new dashboard that reduced page load time by 40%",
+        "Mentored 3 junior developers on best practices",
+        "Implemented CI/CD pipeline reducing deployment time by 60%"
+      ]
+    },
+    {
+      "company": "IM Gears Pvt. Ltd.",
+      "position": "Machine Operator",
+      "location": "Chennai, India",
+      "startDate": "2021-03",
+      "endDate": "2023-02",
+      "current": false,
+      "description": "Operating CNC, VMC Machines, inspecting part quality",
+      "highlights": [
+        "Built REST API handling 10K+ daily requests",
+        "Developed responsive frontend components using React",
+        "Integrated third-party payment processing systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Alagappa University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "location": "Chennai, India",
+      "startDate": "2025-03",
+      "endDate": "2017-05",
+      "gpa": "3.7",
+      "highlights": [
+        "Dean's List 2015-2017",
+        "Senior project: Machine learning-based recommendation system"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Task Manager Pro",
+      "description": "A minimalist task management app with drag-and-drop functionality and local storage persistence.",
+      "technologies": ["JavaScript", "HTML", "CSS", "LocalStorage API"],
+      "url": "https://github.com/johndoe/task-manager",
+      "demo": "https://johndoe.github.io/task-manager"
+    },
+    {
+      "name": "Weather Dashboard",
+      "description": "Real-time weather information app using OpenWeather API with location-based forecasts.",
+      "technologies": ["React", "Node.js", "OpenWeather API"],
+      "url": "https://github.com/johndoe/weather-dashboard",
+      "demo": null
+    },
+    {
+      "name": "Blog Platform",
+      "description": "A simple blog platform with markdown support and user authentication.",
+      "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
+      "url": "https://github.com/johndoe/blog-platform",
+      "demo": "https://blog.johndoe.dev"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": ["JavaScript", "TypeScript", "Python", "Go", "SQL"]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "items": ["React", "Node.js", "Express", "Django", "Next.js"]
+    },
+    {
+      "category": "Tools & Platforms",
+      "items": ["Git", "Docker", "AWS", "PostgreSQL", "MongoDB", "Linux"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "proficiency": "Professional"
+    },
+    {
+      "language": "French",
+      "proficiency": "Conversational"
+    }
+  ],
+  "interests": [
+    "Open source contribution",
+    "Hiking and photography",
+    "Chess",
+    "Reading science fiction",
+    "Home automation projects"
+  ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
+
+  <nav id="navbar">
+    <div class="nav-brand" id="nav-brand">Portfolio</div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" class="nav-link active" data-tab="home">Home</a></li>
+      <li><a href="#" class="nav-link" data-tab="experience">Experience</a></li>
+      <li><a href="#" class="nav-link" data-tab="projects">Projects</a></li>
+      <li><a href="#" class="nav-link" data-tab="blogs">Blog</a></li>
+      <li><a href="#" class="nav-link" data-tab="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section id="tab-home" class="tab active">
+      <div class="container">
+        <div class="hero">
+          <h1 id="hero-name"></h1>
+          <p id="hero-role" class="hero-role"></p>
+          <p id="hero-summary" class="hero-summary"></p>
+          <div id="hero-links" class="hero-links"></div>
+        </div>
+
+        <h2>Skills</h2>
+        <div id="home-skills"></div>
+
+        <h2 style="margin-top:2rem">Education</h2>
+        <div id="home-education"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="tab-experience" class="tab">
+      <div class="container">
+        <h2>Experience</h2>
+        <div id="experience-list"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="tab-projects" class="tab">
+      <div class="container">
+        <h2>Projects</h2>
+        <div id="projects-list"></div>
+      </div>
+    </section>
+
+
+<!-- BLOG -->
+    <section id="tab-blogs" class="tab">
+      <div class="container">
+        <h2>Blog</h2>
+        <div id="blogs-list"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="tab-contact" class="tab">
+      <div class="container">
+        <h2>Contact</h2>
+        <div id="contact-content"></div>
+      </div>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "getting-started-with-cicd",
+    "title": "Getting Started with CI/CD Pipelines",
+    "summary": "A beginner-friendly walkthrough of setting up a CI/CD pipeline using GitHub Actions — from zero to automated deployments.",
+    "date": "2024-08",
+    "tags": ["DevOps", "GitHub Actions", "CI/CD"]
+  },
+  {
+    "slug": "building-dashboards-that-perform",
+    "title": "Building Internal Dashboards That Actually Perform",
+    "summary": "Lessons learned from reducing dashboard load time by 40% — caching strategies, lazy loading, and smarter queries.",
+    "date": "2024-03",
+    "tags": ["Performance", "Web Dev", "SQL"]
+  }
+]

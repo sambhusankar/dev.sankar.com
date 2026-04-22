@@ -1,0 +1,214 @@
+/* ===== RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg:      #fff;
+  --text:    #111;
+  --muted:   #555;
+  --border:  #ddd;
+  --border2: #eee;
+  --nav-bg:  #fff;
+  --pill-bg: transparent;
+}
+
+body.dark {
+  --bg:      #111;
+  --text:    #eee;
+  --muted:   #aaa;
+  --border:  #333;
+  --border2: #222;
+  --nav-bg:  #111;
+  --pill-bg: transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
+}
+
+a { color: var(--text); text-decoration: underline; }
+a:hover { opacity: 0.6; }
+
+/* ===== NAVBAR ===== */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  z-index: 100;
+  transition: background 0.2s;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  cursor: default;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  padding: 0.4rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover { background: var(--border2); color: var(--text); }
+.nav-link.active { background: var(--text); color: var(--bg); }
+
+/* theme toggle — fixed bottom-right */
+#theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+#theme-toggle:hover { background: var(--border2); }
+
+/* hamburger */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+/* ===== LAYOUT ===== */
+.tab { display: none; }
+.tab.active { display: block; }
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1.1rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+h3 { font-size: 1rem; }
+
+.page-subtitle { color: var(--muted); margin-bottom: 2rem; }
+
+/* ===== HOME / HERO ===== */
+.hero { padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.hero h1 { font-size: 2rem; }
+.hero-role { font-size: 1.1rem; color: var(--muted); margin-bottom: 1rem; }
+.hero-summary { max-width: 600px; color: var(--muted); }
+.hero-links { margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.9rem; }
+
+/* ===== SKILLS ===== */
+.skills-group { margin-bottom: 1rem; }
+.skills-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 0.35rem; }
+.pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.pill {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+/* ===== EDUCATION ===== */
+.edu-entry { margin-bottom: 1.25rem; }
+.edu-degree { font-weight: 600; }
+.edu-meta { font-size: 0.875rem; color: var(--muted); }
+
+/* ===== EXPERIENCE ===== */
+.exp-entry { margin-bottom: 2rem; }
+.exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.25rem; }
+.exp-position { font-weight: 600; }
+.exp-dates { font-size: 0.85rem; color: var(--muted); }
+.exp-company { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.5rem; }
+.exp-description { margin-bottom: 0.5rem; font-size: 0.95rem; }
+.exp-highlights { padding-left: 1.25rem; font-size: 0.9rem; }
+.exp-highlights li { margin-bottom: 0.25rem; }
+
+/* ===== PROJECTS ===== */
+.project-entry { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--border2); }
+.project-entry:last-child { border-bottom: none; }
+.project-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem; }
+.project-name { font-weight: 600; }
+.project-links { font-size: 0.85rem; display: flex; gap: 0.75rem; }
+.project-desc { font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--muted); }
+.project-techs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.project-tech { font-size: 0.78rem; padding: 0.15rem 0.5rem; border: 1px solid var(--border); border-radius: 3px; color: var(--muted); }
+
+/* ===== BLOGS ===== */
+.blog-entry { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--border2); }
+.blog-entry:last-child { border-bottom: none; }
+.blog-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.35rem; }
+.blog-title { font-weight: 600; font-size: 1rem; }
+.blog-date { font-size: 0.85rem; color: var(--muted); }
+.blog-summary { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.4rem; }
+.blog-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.blog-tag { font-size: 0.78rem; padding: 0.1rem 0.5rem; border: 1px solid var(--border); border-radius: 3px; color: var(--muted); }
+
+/* ===== CONTACT ===== */
+.contact-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.95rem; }
+.contact-list li { display: flex; gap: 0.5rem; }
+.contact-label { color: var(--muted); min-width: 80px; }
+
+/* ===== EMPTY STATE ===== */
+.empty-state { color: var(--muted); font-size: 0.9rem; padding: 2rem 0; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 56px; left: 0; right: 0;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 0.75rem 1rem;
+    gap: 0.1rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-link { padding: 0.6rem 0.75rem; }
+  .container { padding: 2rem 1.25rem; }
+  .exp-header { flex-direction: column; }
+}
